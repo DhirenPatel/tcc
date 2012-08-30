@@ -17,4 +17,4 @@ LIBSUF=.a
 EXESUF=
 ARCH=i386
 VERSION=0.9.25
-SRC_PATH=/home/shields/h/spitbol/tcc
+SRC_PATH=/home/shields/h/tcc
