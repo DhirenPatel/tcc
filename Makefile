@@ -115,7 +115,8 @@ all: $(PROGS) $(LIBTCC1) $(BCHECK_O) libtcc.a tcc-doc.html tcc.1 libtcc_test$(EX
 
 # Host Tiny C Compiler
 tcc$(EXESUF): $(NATIVE_FILES)
-	$(CC) -o $@ $< $(NATIVE_TARGET) $(CFLAGS) $(LIBS)
+	$(CC) -static -o $@ $< $(NATIVE_TARGET) $(CFLAGS) $(LIBS)
+
 
 # Cross Tiny C Compilers
 i386-tcc$(EXESUF): $(I386_FILES)
